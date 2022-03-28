@@ -32,4 +32,4 @@
 	NOTAS:
 	En lugar de hacer un if, else-if, else quería probar a realizar un switch-case pare refrescarlo en Trabajador.
 	He recorrido el array de empleados de dos maneras distintas para refrescar también uno mediante índice y otro mediante objeto
-	Shift-Alt-J JavaDoc
+	Shift-Alt-J Generado JavaDoc de los métodos importantes
