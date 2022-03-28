@@ -40,5 +40,10 @@ public class MainHerencia {
 		for(Empleado eaux : listaEmpleados) {
 			eaux.calcularSueldoFinal(eaux);
 		}
+		System.out.println("=== Evitar que se pueda calcular el salario de otro ===");
+		listaEmpleados.get(5).calcularSueldoFinal(listaEmpleados.get(2));
+		listaEmpleados.get(5).calcularSueldoFinal(listaEmpleados.get(4));
+		listaEmpleados.get(1).calcularSueldoFinal(listaEmpleados.get(0));
+		listaEmpleados.get(1).calcularSueldoFinal(listaEmpleados.get(3));
 	}
 }

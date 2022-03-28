@@ -10,9 +10,13 @@ public class Trabajador extends Empleado {
 	@Override
 	public void calcularSueldoFinal(Object e) {
 		// TODO Auto-generated method stub
-		if(e instanceof Trabajador) {
-			Trabajador t = (Trabajador)e;
-			System.out.println("Soy el Empleado(Trabajador): " + t.getNombre() + " y mi salario es: " + (t.getSueldoBase()+t.extraValoracion(this.valoracion)));
+		Empleado t = (Empleado)e;
+		if(e instanceof Trabajador && this.nombre.equals(t.getNombre())) {
+			t = (Trabajador)e;
+			System.out.println("Soy el Empleado(Trabajador): "+ t.getNombre() + " y mi salario es: " + (t.getSueldoBase()+this.extraValoracion(this.valoracion)));
+		}		
+		else {
+				System.out.println("No se ha podido calcular ya que son datos privados del Empleado: "+t.getNombre());
 			}
 	}
 	
