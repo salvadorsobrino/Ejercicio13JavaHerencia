@@ -1,0 +1,6 @@
+package entidades;
+
+public class Jefe extends Empleado{
+	private double incentivos
+
+}

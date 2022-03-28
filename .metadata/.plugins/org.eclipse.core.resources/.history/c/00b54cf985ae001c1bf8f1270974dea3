@@ -1,0 +1,11 @@
+package entidades;
+
+public class Jefe extends Empleado{
+
+	@Override
+	public void calcularSueldoFinal(Object o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

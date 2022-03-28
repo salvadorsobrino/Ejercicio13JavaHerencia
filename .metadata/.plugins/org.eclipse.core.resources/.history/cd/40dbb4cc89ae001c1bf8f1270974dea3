@@ -1,0 +1,8 @@
+import entidades.Trabajador;
+
+public class MainHerencia {
+	public static void main(String[] args) {
+		Trabajador t = new Trabajador();
+		t.setNombre("pepe");
+	}
+}

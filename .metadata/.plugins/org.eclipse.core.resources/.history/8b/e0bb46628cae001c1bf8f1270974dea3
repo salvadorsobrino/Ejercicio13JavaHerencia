@@ -1,0 +1,16 @@
+package entidades;
+
+public class Directivo extends Empleado{
+
+	public Directivo(String nombre, Double sueldoBase) {
+		super(nombre, sueldoBase);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void calcularSueldoFinal(Empleado e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

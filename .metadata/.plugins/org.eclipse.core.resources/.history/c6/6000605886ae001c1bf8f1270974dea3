@@ -1,0 +1,20 @@
+package entidades;
+
+public class Jefe extends Empleado{
+	private double incentivos;
+
+	@Override
+	public void calcularSueldoFinal(Object o) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public double getIncentivos() {
+		return incentivos;
+	}
+
+	public void setIncentivos(double incentivos) {
+		this.incentivos = incentivos;
+	}
+
+}

@@ -1,0 +1,30 @@
+package entidades;
+
+public abstract class Empleado {
+	private String nombre;
+	private Double sueldoBase;
+	
+	public Empleado(String nombre, Double sueldoBase) {
+		
+	}
+	public abstract void calcularSueldoFinal(Empleado e);
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	public Double getSueldoBase() {
+		return sueldoBase;
+	}
+
+	public void setSueldoBase(Double sueldoBase) {
+		this.sueldoBase = sueldoBase;
+	}
+	
+
+	
+}

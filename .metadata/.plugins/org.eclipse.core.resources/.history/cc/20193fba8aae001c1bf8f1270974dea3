@@ -1,0 +1,63 @@
+package entidades;
+
+public class Trabajador extends Empleado {
+	private int valoracion;
+	public Trabajador(int valoracion) {
+		super(getNombre(), sueldoBase);
+		this.valoracion=valoracion;
+	}
+	@Override
+	public void calcularSueldoFinal(Empleado e) {
+		// TODO Auto-generated method stub
+		if(e instanceof Trabajador) {
+			Trabajador t = (Trabajador)e;
+			System.out.println("Soy el Empleado:  " + t.getNombre() + " y mi salario es: " + (t.getSueldoBase()+t.extraValoracion(this.valoracion)));
+			}
+	}
+	
+	/** 
+	 * Método que devuelve un entero según la clasificación según la valoración
+	 *  0-4 : +0
+		5-6 : + 50
+		7-8 : + 100
+		9-10: + 200
+	 * @param v indica la valoración
+	 * @return extra indica el extra que tienes según tu valoración
+	 */
+	public int extraValoracion(int v) {
+		int extra;
+		switch(v) {
+		case(0):
+		case(1):
+		case(2):
+		case(3):
+		case(4):
+			extra=0;
+			break;
+		case(5):
+		case(6):
+			extra=50;
+			break;
+		case(7):
+		case(8):
+			extra=100;
+			break;
+		case(9):
+		case(10):
+			extra=200;
+			break;
+		default :
+			extra=0;
+		}
+		return extra;
+	}
+
+	public int getValoracion() {
+		return valoracion;
+	}
+
+	public void setValoracion(int valoracion) {
+		this.valoracion = valoracion;
+	}
+
+}
