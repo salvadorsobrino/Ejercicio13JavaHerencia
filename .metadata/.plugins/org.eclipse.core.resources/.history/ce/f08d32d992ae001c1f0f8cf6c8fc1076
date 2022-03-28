@@ -11,7 +11,7 @@ public class Jefe extends Empleado{
 
 
 	@Override
-	public void calcularSueldoFinal(Object e) {
+	public void calcularSueldoFinal(Empleado e) {
 		// TODO Auto-generated method stub
 		if(e instanceof Jefe) {
 			Jefe j = (Jefe)e;

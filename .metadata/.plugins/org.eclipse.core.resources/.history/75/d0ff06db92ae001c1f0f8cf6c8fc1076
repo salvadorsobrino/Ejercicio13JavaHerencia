@@ -12,7 +12,7 @@ public class Directivo extends Empleado{
 	}
 
 	@Override
-	public void calcularSueldoFinal(Object e) {
+	public void calcularSueldoFinal(Empleado e) {
 		if(e instanceof Directivo) {
 			Directivo d = (Directivo)e;
 			System.out.println("Soy el Empleado(Directivo): " + d.getNombre() + " y mi salario es: " + (d.getSueldoBase()+(this.listaEmpleados.size()*100)));

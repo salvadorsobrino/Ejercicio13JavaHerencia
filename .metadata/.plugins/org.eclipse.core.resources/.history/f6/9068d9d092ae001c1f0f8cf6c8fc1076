@@ -13,7 +13,7 @@ public abstract class Empleado {
 	 * 
 	 * @param e Objeto que recibe el método para posteriormente castearlo
 	 */
-	public abstract void calcularSueldoFinal(Object e);
+	public abstract void calcularSueldoFinal(Empleado e);
 	
 	public String getNombre() {
 		return nombre;

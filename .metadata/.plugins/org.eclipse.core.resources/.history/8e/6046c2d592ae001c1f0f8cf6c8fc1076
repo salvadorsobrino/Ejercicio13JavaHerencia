@@ -8,7 +8,7 @@ public class Trabajador extends Empleado {
 	}
 
 	@Override
-	public void calcularSueldoFinal(Object e) {
+	public void calcularSueldoFinal(Empleado e) {
 		// TODO Auto-generated method stub
 		if(e instanceof Trabajador) {
 			Trabajador t = (Trabajador)e;

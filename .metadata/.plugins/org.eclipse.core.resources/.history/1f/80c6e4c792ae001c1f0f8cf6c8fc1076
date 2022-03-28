@@ -9,11 +9,11 @@ public abstract class Empleado {
 		this.sueldoBase = sueldoBase;
 		
 	}
-	/** Método abstracto que recibe un Object y que calculará el sueldoFinal de cada Empleado según el tipo de Empleado que sea 
-	 * 
+	/** Método abstracto que recibe un Empleado ( se podría haber realizado también con un Object ) y que calculará el sueldoFinal de cada Empleado
+	 * según el tipo de Empleado que sea 
 	 * @param e Objeto que recibe el método para posteriormente castearlo
 	 */
-	public abstract void calcularSueldoFinal(Object e);
+	public abstract void calcularSueldoFinal(Empleado e);
 	
 	public String getNombre() {
 		return nombre;
